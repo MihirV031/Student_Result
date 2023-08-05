@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.form-container div {
+  margin-bottom: 10px;
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.form-container button[type="submit"] {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.delete,
+.edit {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.edit {
+  background-color: #2196f3;
+}
+.edit-popup {
+  position: relative;
+  display: inline-block;
+}
+
+.edit-popup-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  z-index: 1;
+}
+
+.edit-popup:hover .edit-popup-content {
+  display: block;
+}
+
+.edit-popup-content button {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.edit-popup-content button:last-child {
+  background-color: #2196f3;
+}
